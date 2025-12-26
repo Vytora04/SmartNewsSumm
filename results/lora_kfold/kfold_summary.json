@@ -1,0 +1,152 @@
+{
+  "base_model": "sshleifer/distilbart-cnn-12-6",
+  "bbc_root": "data/bbc-news-summary",
+  "k_folds": 5,
+  "epochs": 1.0,
+  "lr": 0.0002,
+  "max_source_len": 512,
+  "max_target_len": 128,
+  "eval_limit_per_fold": 100,
+  "mean": {
+    "rouge1": 0.5466550118007705,
+    "rouge2": 0.4450294322624064,
+    "rougeL": 0.38934115328316576,
+    "bleu": 0.28629237870658464
+  },
+  "std": {
+    "rouge1": 0.011579687053429356,
+    "rouge2": 0.013666092669827108,
+    "rougeL": 0.010589126477849665,
+    "bleu": 0.015341959236014049
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "base_model": "sshleifer/distilbart-cnn-12-6",
+      "epochs": 1.0,
+      "lr": 0.0002,
+      "max_source_len": 512,
+      "max_target_len": 128,
+      "grad_accum": 8,
+      "train_size": 1780,
+      "val_size": 445,
+      "eval_limit": 50,
+      "lora_target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "train_elapsed_s": 3954.57,
+      "metrics": {
+        "rouge1": 0.5266372637095388,
+        "rouge2": 0.4246829329422826,
+        "rougeL": 0.3875745797002569,
+        "bleu": 0.25888114159491615
+      },
+      "adapter_dir": "results/lora_kfold/fold_0/adapter"
+    },
+    {
+      "fold": 1,
+      "base_model": "sshleifer/distilbart-cnn-12-6",
+      "epochs": 1.0,
+      "lr": 0.0002,
+      "max_source_len": 512,
+      "max_target_len": 128,
+      "grad_accum": 8,
+      "train_size": 1780,
+      "val_size": 445,
+      "eval_limit": 100,
+      "lora_target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "train_elapsed_s": 208.35,
+      "metrics": {
+        "rouge1": 0.5513972601067594,
+        "rouge2": 0.45101844606473906,
+        "rougeL": 0.39422412335723594,
+        "bleu": 0.29356429421698804
+      },
+      "adapter_dir": "results/lora_kfold/fold_1/adapter",
+      "used_cuda": true,
+      "gradient_checkpointing": false
+    },
+    {
+      "fold": 2,
+      "base_model": "sshleifer/distilbart-cnn-12-6",
+      "epochs": 1.0,
+      "lr": 0.0002,
+      "max_source_len": 512,
+      "max_target_len": 128,
+      "grad_accum": 8,
+      "train_size": 1780,
+      "val_size": 445,
+      "eval_limit": 100,
+      "lora_target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "train_elapsed_s": 203.9,
+      "metrics": {
+        "rouge1": 0.5620050952727933,
+        "rouge2": 0.46284034344565517,
+        "rougeL": 0.4065213174773199,
+        "bleu": 0.3053475357829096
+      },
+      "adapter_dir": "results/lora_kfold/fold_2/adapter",
+      "used_cuda": true,
+      "gradient_checkpointing": false
+    },
+    {
+      "fold": 3,
+      "base_model": "sshleifer/distilbart-cnn-12-6",
+      "epochs": 1.0,
+      "lr": 0.0002,
+      "max_source_len": 512,
+      "max_target_len": 128,
+      "grad_accum": 8,
+      "train_size": 1780,
+      "val_size": 445,
+      "eval_limit": 100,
+      "lora_target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "train_elapsed_s": 202.41,
+      "metrics": {
+        "rouge1": 0.544207454445461,
+        "rouge2": 0.4343369374837961,
+        "rougeL": 0.3751586078719394,
+        "bleu": 0.2889481275999406
+      },
+      "adapter_dir": "results/lora_kfold/fold_3/adapter",
+      "used_cuda": true,
+      "gradient_checkpointing": false
+    },
+    {
+      "fold": 4,
+      "base_model": "sshleifer/distilbart-cnn-12-6",
+      "epochs": 1.0,
+      "lr": 0.0002,
+      "max_source_len": 512,
+      "max_target_len": 128,
+      "grad_accum": 8,
+      "train_size": 1780,
+      "val_size": 445,
+      "eval_limit": 100,
+      "lora_target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "train_elapsed_s": 197.04,
+      "metrics": {
+        "rouge1": 0.5490279854693001,
+        "rouge2": 0.4522685013755588,
+        "rougeL": 0.38322713800907676,
+        "bleu": 0.2847207943381689
+      },
+      "adapter_dir": "results/lora_kfold/fold_4/adapter",
+      "used_cuda": true,
+      "gradient_checkpointing": false
+    }
+  ]
+}

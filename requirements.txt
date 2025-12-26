@@ -1,0 +1,38 @@
+# Core Web Framework
+fastapi
+uvicorn[standard]
+requests
+tqdm
+
+# Core NLP + Transformers
+torch
+transformers
+sentencepiece
+accelerate
+peft
+# Summarization Utilities
+networkx
+scikit-learn
+numpy
+pandas
+
+# Evaluation Metrics
+rouge-score
+bert-score
+
+# Sentence / Reranker Models
+sentence-transformers
+
+# NLP Text Processing
+spacy
+nltk
+
+beautifulsoup4
+lxml
+readability-lxml
+boilerpy3
+newspaper3k
+
+PyPDF2
+streamlit
+python-dotenv

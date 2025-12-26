@@ -1,0 +1,26 @@
+{
+  "fold": 1,
+  "base_model": "sshleifer/distilbart-cnn-12-6",
+  "epochs": 1.0,
+  "lr": 0.0002,
+  "max_source_len": 512,
+  "max_target_len": 128,
+  "grad_accum": 8,
+  "train_size": 1780,
+  "val_size": 445,
+  "eval_limit": 100,
+  "lora_target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "train_elapsed_s": 208.35,
+  "metrics": {
+    "rouge1": 0.5513972601067594,
+    "rouge2": 0.45101844606473906,
+    "rougeL": 0.39422412335723594,
+    "bleu": 0.29356429421698804
+  },
+  "adapter_dir": "results/lora_kfold/fold_1/adapter",
+  "used_cuda": true,
+  "gradient_checkpointing": false
+}

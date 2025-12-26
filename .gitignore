@@ -1,0 +1,73 @@
+# =====================
+# Python cache & build
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =====================
+# Virtual environments
+# =====================
+.venv/
+venv/
+env/
+
+# =====================
+# Jupyter
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# OS / Editor junk
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =====================
+# Logs & temp files
+# =====================
+*.log
+*.tmp
+
+# =====================
+# Model checkpoints
+# (do NOT upload large models)
+# =====================
+models/
+checkpoints/
+outputs/
+runs/
+
+# =====================
+# HuggingFace / Torch cache
+# =====================
+.cache/
+.huggingface/
+torch_cache/
+
+# =====================
+# Streamlit cache
+# =====================
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# =====================
+# Dataset copies (optional)
+# Keep dataset instructions in README instead
+# =====================
+data/raw/
+data/processed/
+
+# =====================
+# Zip files
+# =====================
+*.zip
+
+# =====================
+# Extras
+# =====================
+NLP Group 5 Project Progress 1.pdf
+NLP Group 5 Project Progress 1.txt
