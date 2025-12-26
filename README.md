@@ -16,21 +16,6 @@
 
 ---
 
-## 📈 Benchmark Results
-
-Evaluated on the **BBC News Summary** dataset (10 samples, target length 55-120 words).
-
-| Model Variant | ROUGE-1 | ROUGE-2 | BLEU | BERTScore (F1) |
-| :--- | :---: | :---: | :---: | :---: |
-| Simple Baseline (TF-IDF) | 0.3340 | 0.2227 | 0.1704 | 0.6300 |
-| BART (Standard) | 0.3669 | 0.2157 | 0.0698 | 0.6631 |
-| BART + RAG | 0.4383 | 0.3428 | 0.1523 | 0.7012 |
-| BART + Hybrid (TextRank) | 0.5141 | 0.4180 | 0.1489 | 0.7440 |
-| BART + LoRA | 0.5794 | 0.4630 | **0.3420** | 0.7485 |
-| **👑 BART + Hybrid + LoRA** | **0.6355** | **0.5793** | 0.3272 | **0.7926** |
-
----
-
 ## 🛠️ Installation
 
 1. **Clone the repository:**
