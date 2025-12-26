@@ -39,7 +39,7 @@ OUT_PATH = Path("results/evaluate_all.json")
 
 LORA_ADAPTER = "results/lora_kfold/fold_0/adapter"  # verified path
 
-MAX_SAMPLES = 10
+MAX_SAMPLES = 50
 MIN_LEN, MAX_LEN = 55, 120
 
 INCLUDE_BERTSCORE = True  # set False if too slow
